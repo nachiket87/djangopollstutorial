@@ -1,0 +1,5 @@
+{% if questions %}
+    {% for q in questions %} 
+       <li><a href="{% url 'polls:detail' q.id %}">{{ q }}</li></a> 
+    {% endfor %}
+{% endif %}
